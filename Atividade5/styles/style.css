@@ -1,0 +1,67 @@
+.rectangle {
+    height: 500px;
+    width: 500px;
+}
+
+@media only screen and (max-width: 420px) {
+    .rectangle {
+        background-color: gray;
+    }
+    .text::before {
+        content: "Cinza";
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 768px){
+    .rectangle {
+        background-color: orange;
+    }
+    .text::before {
+        content: "Laranja";
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .rectangle {
+        background-color: pink;
+    }
+    .text::before {
+        content: "Rosa";
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1080px){
+    .rectangle {
+        background-color: red;
+    }
+    .text::before {
+        content: "Vermelho";
+    }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1336px){
+    .rectangle {
+        background-color: blue;
+    }
+    .text::before {
+        content: "Azul";
+    }
+}
+
+@media only screen and (min-width: 1337px) and (max-width: 1920px){
+    .rectangle {
+        background-color: yellow;
+    }
+    .text::before {
+        content: "Amarelo";
+    }
+}
+
+@media only screen and (min-width: 1921px){
+    .rectangle {
+        background-color: green;
+    }
+    .text::before {
+        content: "Verde";
+    }
+}
