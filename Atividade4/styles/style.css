@@ -1,0 +1,101 @@
+:root {
+    --margin: 15px;
+}
+
+.nav {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-self: center;
+}
+
+.nav-menu {
+    float: left;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #906ce4;
+    background-color: #555;
+    border-radius: 3px;
+}
+
+.bd-grid {
+    background-color: #dddddd;
+    border-radius: 5px;
+    margin: var(--margin);
+    padding: var(--margin);
+    min-height: 50px;
+}
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--margin);
+    justify-content: center;
+}
+
+
+.box {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box.a {
+    width: 100%;
+    display: flex;
+    padding: 0;
+}
+
+.story-content {
+    flex-basis: 65%;
+    padding: 20px;
+}
+
+.story-image {
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.b, .box.c {
+    width: calc(45% - (var(--margin) / 2));
+    padding: 20px;
+}
+
+.news-title {
+    color: darkred;
+}
+
+.politics-title {
+    color: darkgreen;
+}
+
+.sports-title {
+    color: darkblue;
+}
+
+.culture-title {
+    color: darkgoldenrod;
+}
+
+.lifestyle-title {
+    color: darkmagenta;
+}
