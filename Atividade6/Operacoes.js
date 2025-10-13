@@ -1,7 +1,7 @@
-let num1 = prompt("Número 1");
-let num2 = prompt("Número 2");
+let num1 = parseFloat(prompt("Número 1"));
+let num2 = parseFloat(prompt("Número 2"));
 
-alert("Soma:\n" + num1 + " + " + num2 + " = " + (+num1 + +num2));
+alert("Soma:\n" + num1 + " + " + num2 + " = " + (num1 + num2));
 
 alert("Subtração:\n" + num1 + " - " + num2 + " = " + (num1 - num2));
 
