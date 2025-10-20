@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisa</title>
+</head>
+<body>
+    <form id="form">
+        <div class="option-flexbox">
+            <div class="option-item">
+                <p>Idade:</p>
+            </div>
+            <div class="option-item">
+                <input type="number" id="Idade" name="idade" min="0" placeholder="Idade">
+            </div>
+        </div>
+        <div class="option-flexbox">
+            <div class="option-item">
+                <p>Sexo:</p>
+            </div>
+            <div class="option-item">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="Masculino" name="sexo" value="Masculino">
+            </div>
+            <div class="option-item">
+                <label for="Feminino">Feminino</label>
+                <input type="radio" id="Feminino" name="sexo" value="Feminino">
+            </div>
+            <div class="option-item">
+                <label for="Outro">Outro</label>
+                <input type="radio" id="Outro" name="sexo" value="Outro">
+            </div>
+        </div>
+        <div class="option-flexbox">
+            <div class="option-item">
+                <p>Opinião:</p>
+            </div>
+            <div class="option-item">
+                <label for="Otimo">4 - Ótimo</label>
+                <input type="radio" id="Otimo" name="opiniao" value="Ótimo">
+            </div>
+            <div class="option-item">
+                <label for="Bom">3 - Bom</label>
+                <input type="radio" id="Bom" name="opiniao" value="Bom">
+            </div>
+            <div class="option-item">
+                <label for="Regular">2 - Regular</label>
+                <input type="radio" id="Regular" name="opiniao" value="Regular">
+            </div>
+            <div class="option-item">
+                <label for="Pessimo">1 - Péssimo</label>
+                <input type="radio" id="Pessimo" name="opiniao" value="Péssimo">
+            </div>
+        </div>
+        <div class="option-flexbox">
+            <div class="option-item">
+                <input type="button" id="submit" value="Enviar">
+            </div>
+        </div>
+        <div class="data-flexbox">
+            <div class="data-item">
+                <p id="avg-age"></p>
+            </div>
+            <div class="data-item">
+                <p id="high-age"></p>
+            </div>
+            <div class="data-item">
+                <p id="low-age"></p>
+            </div>
+            <div class="data-item">
+                <p id="qtd-pessimo"></p>
+            </div>
+            <div class="data-item">
+                <p id="pct-bom"></p>
+            </div>
+            <div class="data-item">
+                <p id="qtd-fem"></p>
+            </div>
+            <div class="data-item">
+                <p id="qtd-masc"></p>
+            </div>
+            <div class="data-item">
+                <p id="qtd-outro"></p>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
